@@ -1,0 +1,72 @@
+private static string _SchoolID = "_SchoolID";
+        public static string SchoolID
+        {
+            get
+            {
+                return HttpContext.Current.Session[_SchoolID] == null ? String.Empty : HttpContext.Current.Session[_SchoolID].ToString();
+            }
+            set
+            {
+                HttpContext.Current.Session[_SchoolID] = value;
+            }
+        }
+        private static string _SessionID = "_SessionID";
+        public static string SessionID
+        {
+            get
+            {
+                return HttpContext.Current.Session[_SessionID] == null ? String.Empty : HttpContext.Current.Session[_SessionID].ToString();
+            }
+            set
+            {
+                HttpContext.Current.Session[_SessionID] = value;
+            }
+        }
+        private static string _LoginID = "_LoginID";
+        public static string LoginID
+        {
+            get
+            {
+                return HttpContext.Current.Session[_LoginID] == null ? String.Empty : HttpContext.Current.Session[_LoginID].ToString();
+            }
+            set
+            {
+                HttpContext.Current.Session[_LoginID] = value;
+            }
+        }
+        private static string _ClassID = "_ClassID";
+        public static string ClassID
+        {
+            get
+            {
+                return HttpContext.Current.Session[_ClassID] == null ? String.Empty : HttpContext.Current.Session[_ClassID].ToString();
+            }
+            set
+            {
+                HttpContext.Current.Session[_ClassID] = value;
+            }
+        }
+        private static string _UserID = "_UserID";
+        public static string UserID
+        {
+            get
+            {
+                return HttpContext.Current.Session[_UserID] == null ? String.Empty : HttpContext.Current.Session[_UserID].ToString();
+            }
+            set
+            {
+                HttpContext.Current.Session[_UserID] = value;
+            }
+        }
+        private static string _UserTypeID = "_UserTypeID";
+        public static string UserTypeID
+        {
+            get
+            {
+                return HttpContext.Current.Session[_UserTypeID] == null ? String.Empty : HttpContext.Current.Session[_UserTypeID].ToString();
+            }
+            set
+            {
+                HttpContext.Current.Session[_UserTypeID] = value;
+            }
+        }
