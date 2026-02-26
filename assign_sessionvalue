@@ -1,0 +1,18 @@
+foreach (DataRow row1 in dt.Tables[0].Rows)
+                {
+                    SessionHandler.LoginID = row1["LoginID"].ToString();
+                    SessionHandler.ClassID = row1["ClassID"].ToString();
+                    SessionHandler.UserName = row1["UserName"].ToString();
+                    SessionHandler.UserTypeName = row1["UserTypeName"].ToString();
+                    SessionHandler.UserTypeID = row1["UserTypeID"].ToString();
+                    SessionHandler.UserID = row1["UserID"].ToString();
+                    SessionHandler.SchoolID = row1["SchoolID"].ToString();
+                    SessionHandler.SessionID = row1["SessionID"].ToString();
+                    SessionHandler.ProfileImage = row1["ImageURL"].ToString();
+                    SessionHandler.pageitems = Convert.ToInt32(row1["PageItem"] == DBNull.Value ? "10" : row1["PageItem"].ToString());
+                    SessionHandler.SchoolName = row1["SchoolName"].ToString();
+                    SessionHandler.CandidateName = row1["CandidateName"].ToString();
+                    SessionHandler.SchoolLogo = row1["SchoolLogo"].ToString();
+                    SessionHandler.CandidateNo = row1["CandidateNo"].ToString();
+                }
+                SessionHandler.UserMenu = dt.Tables[1];
